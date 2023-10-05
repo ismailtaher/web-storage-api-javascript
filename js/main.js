@@ -26,5 +26,16 @@ console.log(mySessionData); */
 // Local Storage
 
 localStorage.setItem("mylocalStore", JSON.stringify(myObject));
+// Removing a specific item or clearing out our local storage
+/* localStorage.removeItem("mylocalStore"); */
+/* localStorage.clear(); */
 const mylocalData = JSON.parse(localStorage.getItem("mylocalStore"));
 console.log(mylocalData);
+
+// Getting Key using Index
+const key = localStorage.key(0);
+console.log(key);
+
+// Getting length of our local Storage
+const length = localStorage.length;
+console.log(length);
